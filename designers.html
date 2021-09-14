@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--================== FAVICON ==================-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+
+    <!--================== CUSTOM CSS ==================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.1/viewer.css" rel="stylesheet">
+
+    <!--================== CSS ==================-->
+
+    <link rel="stylesheet" href="css/designers.css">
+
+    <!--================== jQuery ==================-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Дизайнеры</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header_top_info">
+                <div class="left_block">
+                    <a href="index.html" class=" logo animate__animated">
+                        <img src="img/brand.png" alt="Logo Sayap">
+                    </a>
+                    <div class="tagline">С 2012 года производим мебель по индивидуальным размерам</div>
+                </div>
+                <div class="center_block">
+                    <div class="address"><span>Шоу-рум:</span><br> г. Краматорск<br> ул. Дворцовая, 23</div>
+                    <div class="work_time"><span>График работы:</span><br> ПН-ПТ с 10 до 19<br> СБ-ВС с 10 до 18</div>
+                </div>
+                <div class="tel_soc">
+                    <div class="social_links">
+                        <a href="" class="soc watsup"></a>
+                        <a href="" class="soc telegram"></a>
+                    </div>
+                    <a href="tel:+380997014511" class="phone"> 8(099)357-38-32</a>
+                </div>
+            </div>
+            <div class="menu_box">
+                <input type="checkbox" name="" id="menu_burger">
+                <ul class="main_catalog">
+                    <label class="menu_burger" for="menu_burger"></label>
+                    <li id="drop_down_fur"><a href="">КАТАЛОГ МЕБЕЛИ <span class="arrow_bot"></span></a>
+                        <ul class="furniture_catalog">
+                            <li><a href="">Кухни</a></li>
+                            <li><a href="">Шкафы-купе</a></li>
+                            <li><a href="">Мебель для ванной</a></li>
+                            <li><a href="">Прихожие</a></li>
+                            <li><a href="">Детская мебель</a></li>
+                            <li><a href="">Гардеробные / стеллажные</a></li>
+                            <li><a href="">Мебель для гостиной</a></li>
+                            <li><a href="">Полки/Ниши</a></li>
+                            <li><a href="">Кабинеты и Библиотеки</a></li>
+                            <li><a href="">Межкомнатные перегородки</a></li>
+                            <li><a href="">Мебель для спальной</a></li>
+                            <li><a href="">Мебель из массива</a></li>
+                            <li><a href="">Офисная мебель</a></li>
+                            <li><a href="">Мебель с мягкими декорами</a></li>
+                            <li><a href="">Мебель Лофт</a></li>
+                            <li><a href="">Cистемы складных дверей</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#material">МАТЕРИАЛЫ</a></li>
+                    <li><a href="index.html#warranty">ГАРАНТИЯ</a></li>
+                    <li><a href="calc.html">КАЛЬКУЛЯТОР</a></li>
+                    <li><a href="">ПОРТФОЛИО</a></li>
+                    <li><a href="index.html#contacts">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="designers_section">
+            <div class="wrapper">
+                <h1 class="designers_section_title anim-items anim-no-active">РАБОТЫ НАШИХ ДИЗАЙНЕРОВ</h1>
+                <div class="designer_box">
+                    <div class="about_designer">
+                        <div id="vera_card" class="designer_card">
+                            <div class="front_card">
+                                <img src="img/designer1.jpg" alt="Vera designer">
+                            </div>
+                            <div class="back_card">
+                                <p class="designer_name">Вера</p>
+                                <p class="designer_skill">
+                                    Опытный специалист работающий в компании с ее основания. Специализируется на
+                                    разработке дизайна кухонь. Работает в разнообразных стилях.
+                                </p>
+                                <div class="designer_soc">
+                                    <a href="">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </div>
+                                <a class="portfolio_link" id="vera_portfolio" href="">Посмотреть работы</a>
+                            </div>
+                        </div>
+                        <div id="marina_card" class="designer_card">
+                            <div class="front_card">
+                                <img src="img/designer2.jpg" alt="marina designer">
+                            </div>
+                            <div class="back_card">
+                                <p class="designer_name">Марина</p>
+                                <p class="designer_skill">
+                                    Опытный специалист работающий в компании с ее основания. Специализируется на
+                                    разработке дизайна кухонь. Работает в разнообразных стилях.
+                                </p>
+                                <div class="designer_soc">
+                                    <a href="">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </div>
+                                <a class="portfolio_link" id="marina_portfolio" href="">Посмотреть работы</a>
+                            </div>
+                        </div>
+                        <div id="natali_card" class="designer_card">
+                            <div class="front_card">
+                                <img src="img/designer3.jpg" alt="natali designer">
+                            </div>
+                            <div class="back_card">
+                                <p class="designer_name">Наталья</p>
+                                <p class="designer_skill">
+                                    Опытный специалист работающий в компании с ее основания. Специализируется на
+                                    разработке дизайна кухонь. Работает в разнообразных стилях.
+                                </p>
+                                <div class="designer_soc">
+                                    <a href="">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </div>
+                                <a class="portfolio_link" id="natali_portfolio" href="">Посмотреть работы</a>
+                            </div>
+                        </div>
+                        <div id="daria_card" class="designer_card">
+                            <div class="front_card">
+                                <img src="img/designer4.jpg" alt="daria designer">
+                            </div>
+                            <div class="back_card">
+                                <p class="designer_name">Дарья</p>
+                                <p class="designer_skill">
+                                    Опытный специалист работающий в компании с ее основания. Специализируется на
+                                    разработке дизайна кухонь. Работает в разнообразных стилях.
+                                </p>
+                                <div class="designer_soc">
+                                    <a href="">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                    <a href="">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </div>
+                                <a class="portfolio_link" id="daria_portfolio" href="">Посмотреть работы</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_box vera_portfolio">
+                        <h2 class="designer_title">Работы дизайнера Веры</h2>
+                        <div id="images_vera" class="gallery">
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/slide3.jpg" alt="">
+                                    <img src="img/slide1.jpg" alt="">
+                                    <img src="img/slide2.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/slide2.jpg" alt="">
+                                    <img src="img/slide3.jpg" alt="">
+                                    <img src="img/slide1.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Прихожая с шкаф-купе</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/slide2.jpg" alt="">
+                                    <img src="img/slide1.jpg" alt="">
+                                    <img src="img/slide3.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Кухня в стиле прованс</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/slide1.jpg" alt="">
+                                    <img src="img/slide3.jpg" alt="">
+                                    <img src="img/slide2.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Тумба под ТВ</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/slide2.jpg" alt="">
+                                    <img src="img/slide1.jpg" alt="">
+                                    <img src="img/slide3.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/slide2.jpg" alt="">
+                                    <img src="img/slide3.jpg" alt="">
+                                    <img src="img/slide1.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/slide1.jpg" alt="">
+                                    <img src="img/slide2.jpg" alt="">
+                                    <img src="img/slide3.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img4.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Тумба под ТВ</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img3.png" alt="">
+                                </div>
+                                <p class="work_card_title">Прихожая с шкаф-купе</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img2.png" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img1.png" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img3.png" alt="">
+                                </div>
+                                <p class="work_card_title">Прихожая с шкаф-купе</p>
+                            </div>
+                        </div>
+                        <button id="vera_contact">Связаться с Верой</button>
+                    </div>
+                    <div class="portfolio_box marina_portfolio">
+                        <h2 class="designer_title">Работы дизайнера Марины</h2>
+                        <div id="images_marina" class="gallery">
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img2.png" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img1.png" alt="">
+                                </div>
+                                <p class="work_card_title">Прихожая с шкаф-купе</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img4.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Кухня в стиле прованс</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img2.png" alt="">
+                                </div>
+                                <p class="work_card_title">Тумба под ТВ</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img1.png" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img4.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img3.png" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img2.png" alt="">
+                                </div>
+                                <p class="work_card_title">Тумба под ТВ</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img3.png" alt="">
+                                </div>
+                                <p class="work_card_title">Прихожая с шкаф-купе</p>
+                            </div>
+                        </div>
+                        <button id="marina_contact">Связаться с Мариной</button>
+                    </div>
+                    <div class="portfolio_box natali_portfolio">
+                        <h2 class="designer_title">Работы дизайнера Натальи</h2>
+                        <div id="images_natali" class="gallery">
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img1.png" alt="">
+                                </div>
+                                <p class="work_card_title">Прихожая с шкаф-купе</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img4.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Кухня в стиле прованс</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img2.png" alt="">
+                                </div>
+                                <p class="work_card_title">Тумба под ТВ</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img4.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img3.png" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img1.png" alt="">
+                                </div>
+                                <p class="work_card_title">Тумба под ТВ</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img3.png" alt="">
+                                </div>
+                                <p class="work_card_title">Прихожая с шкаф-купе</p>
+                            </div>
+                        </div>
+                        <button id="marina_contact">Связаться с Натальей</button>
+                    </div>
+                    <div class="portfolio_box daria_portfolio">
+                        <h2 class="designer_title">Работы дизайнера Дарьи</h2>
+                        <div id="images_daria" class="gallery">
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img4.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Кухня в стиле прованс</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img2.png" alt="">
+                                </div>
+                                <p class="work_card_title">Тумба под ТВ</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img1.png" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img4.jpg" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img3.png" alt="">
+                                </div>
+                                <p class="work_card_title">Дизайн-проект в стиле лофт</p>
+                            </div>
+                            <div class="work_card">
+                                <div class="kitchen_img">
+                                    <img src="img/card_img2.png" alt="">
+                                </div>
+                                <p class="work_card_title">Тумба под ТВ</p>
+                            </div>
+                        </div>
+                        <button id="marina_contact">Связаться с Дарьей</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer_top_box">
+                <a href="index.html" class="logo animate__animated">
+                    <img src="img/brand.png" alt="Logo Sayap">
+                </a>
+                <ul class="footer_list about_list">
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Гарантия</a></li>
+                    <li><a href="">Дизайнеры</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+                <ul class="footer_list service_list">
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Мебель в кредит</a></li>
+                    <li><a href="">Мебель в рассрочку</a></li>
+                    <li><a href="">3D визуализация</a></li>
+                </ul>
+                <ul class="footer_list portfolio_list">
+                    <li><a href="">Портфолио</a></li>
+                    <li><a href="">По категориям</a></li>
+                    <li><a href="">По стилям дизайна</a></li>
+                    <li><a href="">По проектам</a></li>
+                </ul>
+                <ul class="footer_list useful_list">
+                    <li><a href="">Полезно</a></li>
+                    <li><a href="">Замеры помещения</a></li>
+                    <li><a href="">Подготовка к монтажу</a></li>
+                    <li><a href="">Уход за мебелью</a></li>
+                    <li><a href="">Сертификаты материалов</a></li>
+                </ul>
+            </div>
+            <div class="footer_bottom_box">
+                <div class="privat_policy_text">
+                    Использование материалов с данного сайта, разрешена только по согласию с владельцем. Вся
+                    предоставленная на сайте информация ни при каких условиях не является публичной офертой,
+                    определяемой положениями Статьи 437 (2) Гражданского кодекса Украины
+                </div>
+                <div class="since_date">
+                    © 2014-2021 Mebel Sayap Политика конфиденциальности
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.1/viewer.min.js"></script>
+    <script src="/path/to/jquery-viewer.js"></script>
+    <script src="js/designers.js"></script>
+
+</html>

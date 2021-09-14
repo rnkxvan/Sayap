@@ -1,0 +1,139 @@
+/*================ GOOGLE FONTS ================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+/*================ VARIABLE CSS ================ */
+
+:root {
+
+    /*============== Colors ============== */
+
+    --main-color: #92C01F;
+    --second-color: #E10F1D;
+    --text-color: #333333;
+    --title-color: ;
+    --bg-color: ;
+
+    /*============== Fonts ============== */
+
+    --body-font: 'Play', sans-serif;
+    --second-font: ;
+    --title-font: 'Cormorant Garamond', serif;
+
+    --body-font-size: 15px;
+    --title-font-size: ;
+    --small-font-size: ;
+    --h1-font-size: ;
+    --h2-font-size: ;
+    --h3-font-size: ;
+    --h4-font-size: ;
+
+    --body-font-weight: ;
+    --thin-font-weight: ;
+    --medium-font-weight: 400;
+    --bold-font-weight: ;
+}
+
+/* ================================ BASE PROPERTIES ================================ */
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    color: var(--text-color);
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--title-font);
+    font-weight: 400;
+}
+
+
+
+/* =============================== CUSTOM PROPERTIES START =============================== */
+
+
+
+.gif_box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    flex-direction: column;
+    
+}
+.home-link_box:hover img {
+    transform: scale(1.2);
+}
+.home-link_box a {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 50px;
+    display: block;
+    padding: 10px 50px;
+    padding-bottom: 25px;
+    line-height: 50px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: .4s;
+    background-color: #F8F3EF;
+}
+.home-link_box a img{
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    transition: .4s;    
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 320px) {}

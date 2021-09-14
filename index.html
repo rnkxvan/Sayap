@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!--================== FAVICON ==================-->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+
+	<!--================== CUSTOM CSS ==================-->
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="css/jquery.bxslider.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+
+	<!--================== CSS ==================-->
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--================== jQuery ==================-->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+	<title>Мебель Sayap</title>
+</head>
+
+<body>
+	<div class="preloader_box">
+        <div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<p class="loading">Загрузка...</p>
+		</div>     
+    </div>
+	<div id="button-up"><i class='bx bx-up-arrow-circle'></i></div>
+	<header>
+		<div class="wrapper">
+			<div class="header_top_info">
+				<div class="left_block">
+					<a href="" class=" logo animate__animated">
+						<img src="img/brand.png" alt="Logo Sayap">
+					</a>
+					<div class="tagline">С 2012 года производим мебель по индивидуальным размерам</div>
+				</div>
+				<div class="center_block">
+					<div class="address"><span>Шоу-рум:</span><br> г. Краматорск<br> ул. Дворцовая, 23</div>
+					<div class="work_time"><span>График работы:</span><br> ПН-ПТ с 10 до 19<br> СБ-ВС с 10 до 18</div>
+				</div>
+				<div class="tel_soc">
+					<div class="social_links">
+						<a href="" class="soc watsup"></a>
+						<a href="" class="soc telegram"></a>
+					</div>
+					<div class="telephones">
+						<a href="tel:+380997014511" class="phone"> 8(099)357-38-32</a>
+						<a href="tel:+380997014511" class="phone"> 8(099)701-45-11</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu_box">
+				<input type="checkbox" name="" id="menu_burger">
+				<ul class="main_catalog">
+					<label class="menu_burger" for="menu_burger"></label>
+					<li id="drop_down_fur"><a href="">КАТАЛОГ МЕБЕЛИ <span class="arrow_bot"></span></a>
+						<ul class="furniture_catalog">
+							<li><a href="">Кухни</a></li>
+							<li><a href="">Шкафы-купе</a></li>
+							<li><a href="">Мебель для ванной</a></li>
+							<li><a href="">Прихожие</a></li>
+							<li><a href="">Детская мебель</a></li>
+							<li><a href="">Гардеробные / стеллажные</a></li>
+							<li><a href="">Мебель для гостиной</a></li>
+							<li><a href="">Полки/Ниши</a></li>
+							<li><a href="">Кабинеты и Библиотеки</a></li>
+							<li><a href="">Межкомнатные перегородки</a></li>
+							<li><a href="">Мебель для спальной</a></li>
+							<li><a href="">Мебель из массива</a></li>
+							<li><a href="">Офисная мебель</a></li>
+							<li><a href="">Мебель с мягкими декорами</a></li>
+							<li><a href="">Мебель Лофт</a></li>
+							<li><a href="">Cистемы складных дверей</a></li>
+						</ul>
+					</li>
+					<li><a href="#material">МАТЕРИАЛЫ</a></li>
+					<li><a href="#waranty">ГАРАНТИЯ</a></li>
+					<li><a href="calc.html">КАЛЬКУЛЯТОР</a></li>
+					<li><a href="designers.html">ПОРТФОЛИО</a></li>
+					<li><a href="#contacts">КОНТАКТЫ</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section class="slider_section">
+		<div class="wrapper">
+			<div class="bxslider">
+				<div class="slide">
+					<div class="content_slide anim-items anim-no-active">
+						<a href="" class="title_slide">изготавливаем мебель на заказ для всех жилых зон</a>
+						<p class="video_text anim-items anim-no-active">ПОСМОТРЕТЬ ВИДЕО О НАС<a data-fancybox
+								href="https://www.youtube.com/embed/V1L2zyCRHjY" class="play"></a></p>
+					</div>
+					<div class="img_slide_wrap_first">
+						<img src="img/slide1.jpg" alt="">
+					</div>
+				</div>
+				<div class="slide">
+					<div class="img_slide_wrap">
+						<img src="img/slide2.jpg" alt="">
+					</div>
+				</div>
+				<div class="slide">
+					<div class="img_slide_wrap">
+						<img src="img/slide3.jpg" alt="">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="advantage_section">
+		<div class="wrapper">
+			<div class="advantage_box">
+				<div class="advantage_card">
+					<div class="advantage_item_1">
+						<p class="advantage_name">
+							Оказываем комплекс услуг
+						</p>
+						<p class="advantage_desc">
+							Создаем дизайн-проект, производим и устанавливаем мебель.
+						</p>
+					</div>
+					<div class="advantage_item_2">
+						<p class="advantage_name">
+							Качественные материалы
+						</p>
+						<p class="advantage_desc">
+							Используем только прочные, проверенные годами материалы.
+						</p>
+					</div>
+				</div>
+				<div class="advantage_card">
+					<div class="advantage_item advantage_item_3">
+						<p class="advantage_name">
+							Разумные сроки изготовления
+						</p>
+						<p class="advantage_desc">
+							От 10 до 40 рабочих дней. Зависит от наличия материалов на производстве.
+						</p>
+					</div>
+					<div class="advantage_item advantage_item_4">
+						<p class="advantage_name">
+							Мы за честные цены
+						</p>
+						<p class="advantage_desc">
+							Не накручиваем торговую наценку, благодаря собственному производству.
+						</p>
+					</div>
+				</div>
+				<div class="advantage_card">
+					<div class="advantage_item advantage_item_5">
+						<p class="advantage_name">
+							Проекты любой сложности
+						</p>
+						<p class="advantage_desc">
+							Благодаря высокой квалификации мастеров производства и дизайнеров.
+						</p>
+					</div>
+					<div class="advantage_item advantage_item_6">
+						<p class="advantage_name">
+							Реализуем любую вашу идею
+						</p>
+						<p class="advantage_desc">
+							У нас более 100 000 материалов, цветов и текстур.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="catalog">
+		<div class="wrapper">
+			<h1 class="catalog_title anim-items anim-no-active">Мебель на заказ по индивидуальным размерам в Краматорске
+			</h1>
+			<div class="catalog_box">
+				<div class="catalog_box_menu hide">
+					<div class="switch hide"></div>
+					<ul class="catalog_box_menu_list">
+						<li><a id="drop_kitchen_link" href="">Кухни<span class="arrow_black"></span></a>
+							<ul class="kitchen_dropdown">
+								<li><a href="">Прямые кухни</a></li>
+								<li><a href="">Угловые кухни</a></li>
+								<li><a href="">П-образные кухни</a></li>
+								<li><a href="">Кухни с островом</a></li>
+								<li><a href="">Маленькие кухни</a></li>
+								<li><a href="">Кухни премиум</a></li>
+								<li><a href="">Недорогие кухни</a></li>
+								<li><a href="">Кухни с барными стойками</a></li>
+							</ul>
+						</li>
+						<li><a href="">Шкафы-купе</a></li>
+						<li><a href="">Мебель для ванной</a></li>
+						<li><a href="">Прихожие</a></li>
+						<li><a href="">Детская мебель</a></li>
+						<li><a href="">Гардеробные / стеллажные</a></li>
+						<li><a href="">Мебель для гостиной</a></li>
+						<li><a href="">Полки/Ниши</a></li>
+						<li><a href="">Кабинеты и Библиотеки</a></li>
+						<li><a href="">Межкомнатные перегородки</a></li>
+						<li><a href="">Мебель для спальной</a></li>
+						<li><a href="">Мебель из массива</a></li>
+						<li><a href="">Офисная мебель</a></li>
+						<li><a href="">Мебель с мягкими декорами</a></li>
+						<li><a href="">Мебель Лофт</a></li>
+						<li><a href="">Cистемы складных дверей</a></li>
+					</ul>
+				</div>
+				<div class="catalog_box_cards">
+					<div class="cards_box">
+						<div class="card  anim-items">
+							<div class="img_box">
+								<img src="img/card_img1.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 3000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img2.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 5000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img3.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 7000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img1.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 3000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img2.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 5000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img3.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 7000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img1.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 3000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img2.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 5000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img3.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 7000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img1.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 3000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img2.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 5000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+						<div class="card anim-items">
+							<div class="img_box">
+								<img src="img/card_img3.png" alt="kitchen linear">
+							</div>
+							<p class="price_limit">От 7000 грн. за п.м.</p>
+							<button class="price_calc">РАСЧЕТ ЦЕНЫ</button>
+						</div>
+					</div>
+					<button id="show_more">ПОКАЗАТЬ ЕЩЕ</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="waranty"></div>
+	<section class="terms_cost">
+		<div class="wrapper">
+			<div class="warranty">
+				<div class="exclamation">
+					!
+				</div>
+				<p class="warranty_text">
+					Гарантируем 100% отсутствие проблем при монтаже, при проектировки кухонного гарнитура до момента
+					начала ремонта. Благодаря тому, что мы сможем помочь в сопровождении электрики, учесть неровность
+					стен и правильно расположить розетки
+				</p>
+			</div>
+			<div class="soc_contact">
+				<div class="cost_terms_box">
+					<h2 class="cost_terms_title">
+						УЗНАЙТЕ ТОЧНЫЕ СРОКИ И СТОИМОСТЬ
+					</h2>
+					<p class="cost_terms_text">
+						Запишитесь на замер или отправьте нам готовый дизайн-проект
+					</p>
+				</div>
+				<div class="soc_box">
+					<div class="whatsapp_write">
+						<a href="">НАПИСАТЬ В WHATSAPP</a>
+					</div>
+					<div class="telegram_write">
+						<a href="">НАПИСАТЬ В TELEGRAM</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="steps_section">
+		<div class="wrapper">
+			<div class="steps_title_box">
+				<h3 class="steps_title anim-items anim-no-active">5 шагов до интерьера вашей мечты</h3>
+			</div>
+			<div class="steps_box">
+				<div class="step anim-items">
+					<div class="step_number anim-items anim-no-active">1</div>
+					<p class="step_name">Замер, договор и предоплата 50%</p>
+					<p class="step_desc">от 30 минут и до суток</p>
+				</div>
+				<div class="step anim-items">
+					<div class="step_number anim-items anim-no-active">2</div>
+					<p class="step_name">Дизайн-проект и чертежи</p>
+					<p class="step_desc">от суток до 3 дней</p>
+				</div>
+				<div class="step anim-items">
+					<div class="step_number anim-items anim-no-active">3</div>
+					<p class="step_name">Производство мебели</p>
+					<p class="step_desc">10-40 рабочих дней</p>
+				</div>
+				<div class="step anim-items">
+					<div class="step_number anim-items anim-no-active">4</div>
+					<p class="step_name">Оплата 50% и установка мебели </p>
+					<p class="step_desc">от 1 рабочего дня</p>
+				</div>
+				<div class="step anim-items">
+					<div class="step_number anim-items anim-no-active">5</div>
+					<p class="step_name">Гарантия <br> и сервис</p>
+					<p class="step_desc">в течение 12 месяцев </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="video_section">
+		<div class="wrapper">
+			<div class="video">
+				<iframe width="1260" height="430"
+					src="https://www.youtube.com/embed/UYzAg2-S1fY?autoplay=1&mute=1&loop=1&;&;playlist=UYzAg2-S1fY"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<!-- <video src="video/W97.mp4" autoplay loop muted></video> -->
+			</div>
+			<div class="video_text">
+			</div>
+		</div>
+	</section>
+	<section class="showroom_designer_section">
+		<div class="wrapper">
+			<div class="showroom_container">
+				<h3 class="showroom_title anim-items anim-no-active">Дизайнеры учтут все нюансы помещения и ответят на
+					вопросы</h3>
+				<div class="showroom_desc">
+					<div class="showroom_img_box">
+						<img src="img/Rectangle 52.jpg" alt="Showroom photo">
+					</div>
+					<div class="showroom_text">
+						<p class="text">В шоу-руме на ул. Дворцовая, 25 поможем определиться с материалами, фурнитурой и
+							текстурами</p>
+						<p class="text">Предложим лучшие варианты организации пространства, учитывая все ваши пожелания
+						</p>
+						<p class="text">Предоставим 3D-эскиз будущего изделия или всего помещения</p>
+					</div>
+				</div>
+			</div>
+			<div class="designers_container">
+				<div class="avatar_card">
+					<div class="avatar_wrap">
+						<img src="img/designer1.jpg" alt="designer Vera">
+					</div>
+					<div class="designer_desc">
+						<p class="designer_name">Вера</p>
+						<p class="special">Дизайнер кухонь</p>
+						<a href="designers.html" class="show_examples">Посмотреть работы</a>
+					</div>
+				</div>
+				<div class="avatar_card">
+					<div class="avatar_wrap">
+						<img src="img/designer2.jpg" alt="designer Marina">
+					</div>
+					<div class="designer_desc">
+						<p class="designer_name">Марина</p>
+						<p class="special">Дизайнер кухонь</p>
+						<a href="designers.html" class="show_examples">Посмотреть работы</a>
+					</div>
+				</div>
+				<div class="avatar_card">
+					<div class="avatar_wrap">
+						<img src="img/designer3.jpg" alt="designer Natali">
+					</div>
+					<div class="designer_desc">
+						<p class="designer_name">Наталья</p>
+						<p class="special">Дизайнер прихожих и залов</p>
+						<a href="designers.html" class="show_examples">Посмотреть работы</a>
+					</div>
+				</div>
+				<div class="avatar_card">
+					<div class="avatar_wrap">
+						<img src="img/designer4.jpg" alt="designer Dariya">
+					</div>
+					<div class="designer_desc">
+						<p class="designer_name">Дарья</p>
+						<p class="special">Дизайнер спален</p>
+						<a href="designers.html" class="show_examples">Посмотреть работы</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="project_section">
+		<div class="wrapper">
+			<div class="project_container">
+				<div class="project_container_desc">
+					<h3 class="project_title anim-items anim-no-active">У вас уже есть готовый дизайн-проект?</h3>
+					<p class="project_text">
+						Отправьте нам для расчета стоимости и, если потребуется, предложим как можно улучшить ваш
+						проект.
+					</p>
+					<img class="project_bg" src="img/project-bg.jpg" alt="">
+				</div>
+				<div class="project_form">
+					<form class="validate" method="POST" action="send.php" id="project_form" enctype="multipart/form-data">
+						<p class="form_title">Отправить проект на оценку</p>
+						<div class="error name_error"></div>
+						<input type="text" class="user_name" name="user_name" id="user_name_f1"
+							placeholder="Введите имя">
+						<div class="error phone_error"></div>
+						<input type="tel" class="user_phone" name="user_phone" id="user_phone_f1"
+							placeholder="+38 (099) 999 99 99">
+						<p class="download_text">Прикрепите файлы проекта</p>
+						<label class="download_btn" for="myfile">
+							ЗАГРУЗИТЬ ФАЙЛЫ
+							<input name="myfile" id="myfile" type="file" accept=".pdf, .jpeg, .jpg">
+						</label>
+						<p class="error dwnload_file_name"></p>
+						<input class="required" type="checkbox" name="politic_conf" id="politic_conf">
+						<label for="politic_conf" class="personal_data_toggle"></label>
+						<p class="personal_data">Я согласен на <a id="personal_data" href="">обработку персональных
+								данных</a></p>
+						<div class="error politic_error"></div>
+						<input data-method="serialize" id="submit_btn" type="submit" value="ОТПРАВИТЬ ПРОЕКТ НА РАСЧЕТ">
+						<p class="email_text">Либо отправьте файлы проекта на почту <a
+								href="mailto:sayap@gmail.com">sayap@gmail.com</a> или мессенджеры</p>
+						<div class="soc_block">
+							<a href="" class="social_watsup">Написать</a>
+							<a href="" class="social_telegram">Написать</a>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<div id="material"></div>
+	<section id="master_material_section" class="master_material_section">
+		<div class="wrapper">
+			<div class="masters_container">
+				<h3 class="masters_title anim-items anim-no-active">Мастера бережно изготовят мебель из лучших
+					материалов</h3>
+				<div class="masters_desc">
+					<div class="masters_text">
+						<p class="quality_control">Строго контролируем качество работ на собственном производстве</p>
+						<p class="text">У нас более 30 мастеров со стажем от 5 до 25 лет</p>
+						<p class="text">Перед тем как попасть к нам в команду, технолог производства проверяет навыки
+							кандидатов на реальном проекте</p>
+						<p class="text">Мебель производим на итальянских роботизированных станках Fielder</p>
+					</div>
+					<div class="masters_img_box">
+						<img src="img/masters.jpg" alt="Master photo">
+					</div>
+				</div>
+				<div class="materials_box">
+					<div class="materials">
+						<img src="img/bloom.png" alt="bloom">
+						<img src="img/Boyard.png" alt="Boyard">
+						<img src="img/egger.png" alt="Egger">
+						<img src="img/Furnitex.png" alt="Furnitex">
+						<img src="img/Hettich.png" alt="Hettich">
+						<img src="img/lamarty.png" alt="lamarty">
+						<img src="img/adelkreis.png" alt="adelkreis">
+						<p class="material_title">
+							Изготавливаем мебель только из проверенных годами материалов
+						</p>
+						<div class="material_inners">
+
+
+							<div class="facades_box">
+								<p class="facades name">Фасады</p>
+								<div class="facade_list_box">
+									<ul class="facades_list">
+										<li>МДФ в пленке ПВХ/эмали</li>
+										<li>HPL пластики ARPA</li>
+										<li>Fenix</li>
+										<li>RMMA пластики Adelkries</li>
+										<li>Шпон и массив</li>
+									</ul>
+									<ul class="facade_countries">
+										<li>Россия</li>
+										<li>Италия</li>
+										<li>Италия</li>
+										<li>Германия</li>
+										<li>Россия</li>
+									</ul>
+								</div>
+							</div>
+							<div class="ldsp_box">
+								<p class="ldsp name">ЛДСП</p>
+								<div class="ldsp_list_box">
+									<ul class="ldsp_list">
+										<li>Ламарти</li>
+										<li>Югра-плит</li>
+										<li>Увадрев</li>
+										<li>Egger</li>
+									</ul>
+									<ul class="ldsp_countries">
+										<li>Россия</li>
+										<li>Россия</li>
+										<li>Россия</li>
+										<li>Россия</li>
+									</ul>
+								</div>
+							</div>
+							<div class="fittings_box">
+								<p class="fittings name">Фурнитура</p>
+								<div class="fitting_list_box">
+									<ul class="fitting_list">
+										<li>Hettich</li>
+										<li>Blum</li>
+										<li>Boyard</li>
+										<li>Furnitex</li>
+									</ul>
+									<ul class="fitting_countries">
+										<li>Германия</li>
+										<li>Австрия</li>
+										<li>Россия</li>
+										<li>Италия</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<button id="open_catalog">ПОСМОТРЕТЬ ВЕСЬ КАТАЛОГ</button>
+					</div>
+				</div>
+	</section>
+	<div id="contacts"></div>
+	<section class="consult_form-contact">
+		<div class="wrapper">
+			<div class="consult_form_box">
+				<div class="consult_box">
+					<h3 class="consult_title anim-items anim-no-active">ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА</h3>
+					<p class="consult_text">После отправки контактов, мы наберем вас в ближайшее время. Или свяжитесь с
+						нами самостоятельно:</p>
+					<div class="consult_contacts">
+						<div class="phone_block">
+							<a href="tel:+380997014511" class="phone"> 8(099)357-38-32</a>
+							<a href="tel:+380997014511" class="phone"> 8(099)701-45-11</a>
+						</div>
+						<div class="soc_block">
+							<a href="" class="social_watsup">Написать в WhatsApp</a>
+							<a href="" class="social_telegram">Написать в Telegram</a>
+						</div>
+					</div>
+				</div>
+				<div class="form_box">
+					<p class="form_title">Получить консультацию специалиста</p>
+					<form class="validate" id="consult_form" action="send_form2.php" method="POST">
+						<div class="name_error_form2"></div>
+						<input type="text" class="user_name" name="user_name" id="user_name_f2"
+							placeholder="Введите имя">
+						<div class="phone_error_form2"></div>
+						<input type="tel" class="user_phone" name="user_phone" id="user_phone_f2"
+							placeholder="+38 (099) 999 99 99">
+						
+						<input data-method="serialize" id="send_btn" type="submit" value="отправить">
+					</form>
+					<p class="conf_politic">Нажимая кнопку «Отправить», вы автоматически соглашаетесь с
+						<a href="" id="politic">Политикой конфиденциальности</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts_section">
+		<div class="wrapper">
+			<div class="contacts_map_box">
+				<div class="contacts_part">
+					<h3 class="contacts_title">ПОСЕТИТЕ НАШ ШОУ-РУМ</h3>
+					<div class="adress_worktime">
+						<p class="adress">г. Краматорск <br> ул. Дворцовая, 23</p>
+						<p class="worktime">Будни с 10 до 19 <br> Выходные с 10 до 18</p>
+					</div>
+					<p class="contacts_text">Следите за нами в соцсетях</p>
+					<div class="soc_block">
+						<a href="" class="social_vk">Подписаться в VK</a>
+						<a href="" class="social_inst">Подписаться в Instagram</a>
+					</div>
+				</div>
+				<div class="map_part">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1315.7213891158383!2d37.59466984049342!3d48.735238139175344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df96fd46285ddd%3A0xa8cd277b87c1d663!2zItCf0YDQvtCz0YDQtdGB0YEi!5e0!3m2!1sru!2sua!4v1629472158779!5m2!1sru!2sua"
+						width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper">
+			<div class="footer_top_box">
+				<a href="index.html" class="logo animate__animated">
+					<img src="img/brand.png" alt="Logo Sayap">
+				</a>
+				<ul class="footer_list about_list">
+					<li><a href="">О нас</a></li>
+					<li><a href="">Гарантия</a></li>
+					<li><a href="">Дизайнеры</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+				<ul class="footer_list service_list">
+					<li><a href="">Услуги</a></li>
+					<li><a href="">Мебель в кредит</a></li>
+					<li><a href="">Мебель в рассрочку</a></li>
+					<li><a href="">3D визуализация</a></li>
+				</ul>
+				<ul class="footer_list portfolio_list">
+					<li><a href="">Портфолио</a></li>
+					<li><a href="">По категориям</a></li>
+					<li><a href="">По стилям дизайна</a></li>
+					<li><a href="">По проектам</a></li>
+				</ul>
+				<ul class="footer_list useful_list">
+					<li><a href="">Полезно</a></li>
+					<li><a href="">Замеры помещения</a></li>
+					<li><a href="">Подготовка к монтажу</a></li>
+					<li><a href="">Уход за мебелью</a></li>
+					<li><a href="">Сертификаты материалов</a></li>
+				</ul>
+			</div>
+			<div class="footer_bottom_box">
+				<div class="privat_policy_text">
+					Использование материалов с данного сайта, разрешена только по согласию с владельцем. Вся
+					предоставленная на сайте информация ни при каких условиях не является публичной офертой,
+					определяемой положениями Статьи 437 (2) Гражданского кодекса Украины
+				</div>
+				<div class="since_date">
+					© 2014-2021 Mebel Sayap Политика конфиденциальности
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="image-viewer">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="full-image">
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--================== CUSTOM JAVASCRIPT ==================-->
+
+
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+	<script src="js/jquery.typewriter.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+	<script src="js/phone-mask.js"></script>
+
+	<!--================== MAIN JAVASCRIPT ==================-->
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>

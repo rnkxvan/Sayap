@@ -1,0 +1,859 @@
+/*================ GOOGLE FONTS ================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+/*================ VARIABLE CSS ================ */
+
+:root {
+
+    /*============== Colors ============== */
+
+    --main-color: #92C01F;
+    --second-color: #E10F1D;
+    --text-color: #333333;
+    --title-color: ;
+    --bg-color: ;
+
+    /*============== Fonts ============== */
+
+    --body-font: 'Play', sans-serif;
+    --second-font: ;
+    --title-font: 'Cormorant Garamond', serif;
+
+    --body-font-size: 15px;
+    --title-font-size: ;
+    --small-font-size: ;
+    --h1-font-size: ;
+    --h2-font-size: ;
+    --h3-font-size: ;
+    --h4-font-size: ;
+
+    --body-font-weight: ;
+    --thin-font-weight: ;
+    --medium-font-weight: 400;
+    --bold-font-weight: ;
+}
+
+/* ================================ BASE PROPERTIES ================================ */
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    color: var(--text-color);
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--title-font);
+    font-weight: 400;
+}
+
+
+
+/* =============================== CUSTOM PROPERTIES START =============================== */
+.wrapper {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+
+
+/* =============================== Header =============================== */
+header {
+    margin-bottom: 70px;
+}
+
+
+.header_top_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.left_block {
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 35%;
+    margin-right: 30px;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.tagline {
+    width: 50%;
+    font-size: var(--body-font-size);
+}
+
+.center_block {
+    display: flex;
+    align-items: center;
+}
+
+.address {
+    font-size: var(--body-font-size);
+    margin-right: 60px;
+}
+
+.address span,
+.work_time span {
+    color: #888888;
+}
+
+.work_time {
+    font-size: var(--body-font-size);
+}
+
+.tel_soc {
+    display: flex;
+    align-items: center;
+}
+
+.tel_soc .soc {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tel_soc a {
+    margin-left: 25px;
+    transition: .5s;
+}
+
+.watsup {
+    background-image: url(../img/watsapp.svg);
+    border-radius: 50%;
+
+}
+
+.telegram {
+    background-image: url(../img/tel.svg);
+    border-radius: 50%;
+}
+
+.watsup:hover {
+    box-shadow: 0px 0px 15px 5px rgba(113, 181, 47, 0.95),
+        inset 0px 0px 3px 2px rgba(113, 181, 47, 0.95);
+}
+
+.telegram:hover {
+    box-shadow: 0px 0px 15px 5px rgba(37, 162, 224, 0.95),
+        inset 0px 0px 3px 2px rgba(37, 162, 224, 0.95);
+}
+
+.phone {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.phone:hover {
+    transform: scale(1.05);
+    text-shadow: 0px -2px 2px rgba(113, 181, 47, 0.95),
+        0px 2px 2px rgba(113, 181, 47, 0.95)
+}
+
+.menu_box {
+    margin-top: 35px;
+    background: linear-gradient(0deg, rgba(51, 51, 51, 1) 39%, rgba(106, 106, 106, 1) 98%);
+    text-align: center;
+}
+
+#menu_burger {
+    display: none;
+}
+
+.menu_box.floating {
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.main_catalog>li {
+    display: inline-block;
+    line-height: 45px;
+}
+
+.main_catalog>li a {
+    font-size: var(--body-font-size);
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    letter-spacing: 2px;
+}
+
+.main_catalog a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: var(--main-color);
+}
+
+.arrow_bot {
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    background-image: url(../img/caret-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.furniture_catalog {
+    text-align: left;
+    position: absolute;
+    background-color: var(--text-color);
+    padding-bottom: 5px;
+    transform: scaleY(0);
+    transition: all .2s;
+    transform-origin: top;
+    z-index: 100;
+
+}
+
+#drop_down_fur:hover .furniture_catalog {
+    transform: scaleY(1);
+
+}
+
+.furniture_catalog li a {
+    line-height: 40px;
+}
+
+/* =============================== Header end =============================== */
+
+/* =============================== Main start =============================== */
+
+main {
+    margin-bottom: 100px;
+}
+
+.designers_section_title {
+    display: block;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    font-size: 42px;
+    margin-bottom: 80px;
+    transform: translate(-60%, 0);
+    transition: all 1.2s ease-out .5s;
+    opacity: 0;
+}
+.designers_section_title._active {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.about_designer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    
+}
+
+.designer_card {
+    width: 300px;
+    height: 360px;
+    position: relative;
+    border-radius: 15px;
+    transition: .5s;
+}
+.designer_card.disabled {
+    filter: grayscale(1);
+    transform: scale(0.8);
+}
+
+.designer_card:hover .front_card {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.designer_card:hover .back_card {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.designer_card:hover .back_card>.designer_soc {
+    transform: translateY(0);
+}
+
+.designer_card:hover .back_card > .portfolio_link {
+    transform: translateY(0);
+}
+
+.front_card,
+.back_card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s ease-out;
+    border-radius: 15px;
+}
+
+.front_card {
+    box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.15);
+    backface-visibility: visible;
+    transform: perspective(600px) rotateY(0);
+}
+.designer_card.disabled {
+    filter: grayscale(1) blur(3px);
+    transform: scale(0.8);
+}
+
+.designer_card.disabled:hover {
+    filter: grayscale(1);
+    transform: scale(0.8);
+}
+
+.back_card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transform: perspective(600px) rotateY(180deg);
+    cursor: auto;
+}
+
+.back_card .designer_name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.back_card .designer_skill {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.back_card .designer_soc {
+    transition: .4s ease-out .4s;
+    transform: translateY(150px);
+}
+
+.back_card .designer_soc a {
+    color: #fff;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.back_card .designer_soc a ion-icon {
+    transition: .4s ease-out;
+}
+
+.back_card .designer_soc a:hover ion-icon {
+    transform: scale(1.3);
+}
+
+.portfolio_link {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: transform .4s ease-out .6s;
+    transform: translateY(150px);
+}
+
+.portfolio_link:hover {
+    text-decoration: underline var(--main-color);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.work_card {
+    text-align: center;
+    width: 25%;
+    margin-bottom: 30px;
+    
+}
+
+
+
+
+.portfolio_box button {
+    text-align: center;
+    padding: 10px 0;
+    width: 30%;
+    border: 2px solid var(--second-color);
+    background-color: var(--second-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    letter-spacing: 0.07em;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.portfolio_box button:hover {
+    background: transparent;
+    color: var(--second-color);
+}
+.daria_portfolio,
+.natali_portfolio,
+.marina_portfolio,
+.vera_portfolio {
+    display: none;
+}
+.kitchen_img {
+    position: relative;
+    width: 260px;
+    height: 182px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.work_card .kitchen_img:hover img {
+    transform: scale(1.1);
+}
+.kitchen_img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .3s;
+}
+.designer_title {
+    margin-bottom: 50px;
+    font-size: 32px;
+    padding-left: 25px;
+    border-left: 2px solid var(--second-color);
+
+}
+/* =============================== Main end =============================== */
+
+
+
+
+
+/* ============================ Footer start ============================ */
+
+footer {
+    padding-bottom: 50px;
+}
+
+footer .footer_top_box {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+footer .footer_top_box .logo {
+    width: 15%;
+    margin-right: 70px;
+}
+
+footer .footer_top_box .footer_list {
+    width: 17%;
+}
+
+footer .footer_top_box .footer_list li {
+    padding: 7px 0;
+}
+
+footer .footer_top_box .footer_list li a {
+    color: var(--text-color);
+    font-size: 14px;
+    position: relative;
+}
+
+footer .footer_top_box .main_list li a {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+footer .footer_top_box .footer_list li:first-child a {
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+footer .footer_top_box .footer_list li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: .3s;
+}
+
+footer .footer_top_box .footer_list li a:hover::after {
+    width: 100%;
+}
+
+
+.footer_bottom_box {
+    padding-top: 35px;
+    border-top: 1px solid var(--text-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_bottom_box .privat_policy_text {
+    width: 45%;
+    font-size: 12px;
+}
+
+.footer_bottom_box .since_date {
+    width: 15%;
+    font-size: 12px;
+}
+
+/* ============================ Footer end ============================ */
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    .tagline {
+        display: none;
+    }
+
+    .left_block {
+        width: auto;
+        display: block;
+    }
+
+    .logo {
+        display: inline;
+        width: 65%;
+        margin-right: 0;
+    }
+
+    .tel_soc {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .address {
+        margin-right: 40px;
+        font-size: 14px;
+    }
+
+    .work_time {
+        font-size: 14px;
+    }
+
+    .tel_soc .phone {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .furniture_catalog {
+        display: none;
+    }
+
+    #drop_down_fur>a>span {
+        display: none;
+    }
+
+    .menu_box.floating {
+        margin-top: 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+    }
+
+    .main_catalog {
+        height: 50px;
+        position: relative;
+        transition: .5s;
+    }
+
+    .main_catalog::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 26px;
+        height: 2px;
+        background-color: #fff;
+        right: 15px;
+        top: 25px;
+        cursor: pointer;
+    }
+
+    .main_catalog>li {
+        display: none;
+    }
+
+    .furniture_catalog {
+        display: none;
+    }
+
+    .menu_burger {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 15px;
+        top: 18px;
+        cursor: pointer;
+    }
+
+    .menu_burger::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 26px;
+        height: 2px;
+        background-color: #fff;
+        right: 0;
+        top: 1px;
+        transition: .5s;
+        transform-origin: center;
+    }
+
+    .menu_burger::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 26px;
+        height: 2px;
+        background-color: #fff;
+        right: 0;
+        top: 13px;
+        transition: .5s;
+        transform-origin: center;
+    }
+
+    #menu_burger:checked~.main_catalog::after {
+        display: none;
+    }
+
+    #menu_burger:checked~.main_catalog .menu_burger::before {
+        transform: rotate(-46deg) translateY(8px);
+
+    }
+
+    #menu_burger:checked~.main_catalog .menu_burger::after {
+        transform: rotate(46deg) translateY(-8px);
+    }
+
+    #menu_burger:checked~.main_catalog {
+        padding-top: 30px;
+        height: 320px;
+    }
+
+    #menu_burger:checked~.main_catalog li {
+        display: block;
+    }
+
+    .designers_section_title {
+        font-size: 30px;
+    }
+    .designer_card {
+        width: 24%;
+        height: 250px;
+    }
+    .back_card .designer_name {
+        font-size: 14px;
+    }
+    .back_card .designer_skill {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .back_card .designer_soc a {
+        font-size: 18px;
+    }
+    .portfolio_link {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    footer .footer_top_box .logo {
+        margin-right: 30px;
+    }
+
+    .footer_bottom_box {
+        justify-content: start;
+    }
+
+    .footer_bottom_box .since_date {
+        width: 25%;
+        margin-left: auto;
+    }
+    .work_card {
+        margin-right: 100px;
+        width: auto;
+    }
+    .portfolio_box button {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    header {
+        margin-bottom: 50px;
+    }
+    .center_block {
+        display: none;
+    }
+    .about_designer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .designer_card {
+        width: 60%;
+        height: 340px;
+        margin-bottom: 30px;
+    }
+    .back_card .designer_name {
+        font-size: 16px;
+    }
+    .back_card .designer_skill {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .back_card .designer_soc a {
+        font-size: 28px;
+    }
+    .portfolio_link {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .work_card {
+        margin-right: 0;
+    }
+    footer .footer_top_box {
+        flex-wrap: wrap;
+    }
+
+    footer .footer_top_box .footer_list {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .footer_top_box>a {
+        display: none;
+    }
+
+    .footer_bottom_box {
+        flex-direction: column;
+    }
+
+    .footer_bottom_box .privat_policy_text {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_bottom_box .since_date {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .left_block {
+        width: 50%;
+    }
+
+    .tel_soc a {
+        margin-left: 0;
+    }
+    .header_top_info>div {
+        margin-bottom: 20px;
+    }
+    .menu_box {
+        margin-top: 0;
+    }
+    footer .footer_top_box {
+        flex-direction: column;
+    }
+    footer .footer_top_box .footer_list {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .designer_card {
+        width: 80%;
+        height: 340px;
+        
+    }
+    .designer_title {
+        font-size: 24px;
+    }
+}
